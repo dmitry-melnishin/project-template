@@ -1,5 +1,33 @@
-h1 {
-    span {
-        color: red;
+$main-fz: 50px;
+$secondary-fz: 15px;
+
+$main-color: lightblue;
+$font-color: #000000;
+
+body {
+  background-color: $main-color;
+    h1 {
+      padding: 20px;
+      span {
+        color: $font-color;
+        font-size: $main-fz;
+        &:hover {
+          color: lighten($font-color, 50%);
+          outline: 1px solid red;
+        }
+      }
+    }
+    .features {
+      margin-bottom: 20px;
+
+      &-item {
+        padding: 40px;
+        margin-right: 400px;
+        background-color: yellow;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
 }

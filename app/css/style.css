@@ -1,2 +1,18 @@
-h1 span {
-  color: red; }
+body {
+  background-color: lightblue; }
+  body h1 {
+    padding: 20px; }
+    body h1 span {
+      color: #000000;
+      font-size: 50px; }
+      body h1 span:hover {
+        color: gray;
+        outline: 1px solid red; }
+  body .features {
+    margin-bottom: 20px; }
+    body .features-item {
+      padding: 40px;
+      margin-right: 400px;
+      background-color: yellow; }
+      body .features-item:last-child {
+        margin-right: 0; }
